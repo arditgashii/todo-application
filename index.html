@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <div class="card text-center">
+            <div class="card-header text-white p-4">
+                <h1>ToDo Application</h1>
+            </div>
+            <div class="card-body p-4">
+                <div class="input-group mb-3 p-3">
+                    <input type="text" id="taskInput" class="form-control" placeholder="Enter your task...">
+                    <div class="input-group-append">
+                        <button class="button task-btn ml-4" onclick="toggleStackQueue()">Stack/Queue</button>
+                        <button class="button task-btn ml-2" onclick="addTask()"><i class="bi bi-plus-square">  </i>Add Task</i></button>
+                    </div>
+                </div>
+                <div id="taskList" class="list-group d-flex justify-content-center align-items-center">
+                    <!-- Here will be added Task items  -->
+                </div>
+                <div class="input-group mt-3" id="completeTaskContainer" style="display:none;">
+                    <button class="btn btn-success pl-4 pr-4 mt-2 mb-2" onclick="completeTask()">Complete Task <i class="bi bi-check-square"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(144 86 159) 0%, rgb(135 88 135) 90% );
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Conatiner CSS */
+.container {
+    height: 80vh;
+}
+
+/* Card CSS */
+.card {
+    min-width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+
+.card-header {
+    background-color: rgb(92 0 92);
+}
+
+.card-body{
+    background-color: rgb(110 20 110);
+}
+
+.list-group-item{
+    width: 95%;
+}
+
+/* Button CSS */
+button{
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+}
+
+.task-btn {
+    background-color: rgb(81, 0, 81);
+}
+
+/* Input CSS */
+.input-group, .list-group, .btn, #taskInput {
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+#taskInput {
+    background-color: rgb(191 144 203);
+}
+
+#taskInput::placeholder {
+    color: rgb(81, 0, 81);
+    font-weight: 500;
+}
